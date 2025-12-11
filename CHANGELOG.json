@@ -1,0 +1,60 @@
+{
+  "versions": [
+    {
+      "version": "0.0.2-beta",
+      "versionName": "Parça Seçim İyileştirmesi",
+      "date": "2024-12-XX",
+      "summary": "Parça seçim davranışı iyileştirildi. Artık parçalara tıklandığında zoom yapılmıyor, sadece parça seçiliyor.",
+      "added": [],
+      "changed": [],
+      "fixed": [
+        "Parçalara tıklandığında istenmeyen zoom davranışı düzeltildi",
+        "Canvas üzerinde parça seçimi artık zoom yapmadan çalışıyor"
+      ],
+      "removed": []
+    },
+    {
+      "version": "0.0.1-beta",
+      "versionName": "İlk Sürüm",
+      "date": "2024-12-XX",
+      "summary": "Cut Optimizer'ın ilk stabil sürümü. MaxRects algoritması ile 2D kesme optimizasyonu, canvas görselleştirme, export/import özellikleri ve gelişmiş kontroller ile başlangıç.",
+      "added": [
+        "MaxRects heuristik algoritması ile 2D kesme optimizasyonu",
+        "Otomatik stok boyutlandırma (büyütme/küçültme)",
+        "Bıçak kalınlığı (kerf) desteği",
+        "Canvas görselleştirme",
+        "Export/Import özellikleri (JSON + PNG)",
+        "Canvas zoom/pan desteği (panzoom.js)",
+        "Farklı sıralama stratejileri (Alan, Çevre, En Uzun Kenar, En Kısa Kenar, Oran)",
+        "Parça numaralandırma ve kesim sırası gösterimi",
+        "Parça listesi tablosu (detaylı bilgiler)",
+        "Detaylı istatistikler paneli (Ortalama, Min/Max parça boyutları, Atık yüzdesi, Kullanılan alan yüzdesi)",
+        "Gelişmiş kontroller (Minimum boşluk, Çoklu stok, Stok maliyeti hesaplama)",
+        "Otomatik localStorage kaydetme/yükleme",
+        "Debounce ile performans optimizasyonu",
+        "Sayfa kapanmadan önce otomatik kaydetme",
+        "Responsive tasarım",
+        "Sol navbar ile sayfa navigasyonu",
+        "Sürüm geçmişi sayfası",
+        "Parça seçme ve vurgulama özelliği"
+      ],
+      "changed": [],
+      "fixed": [],
+      "removed": []
+    }
+  ],
+  "unreleased": {
+    "planned": [
+      "Çoklu stok plaka optimizasyonu (tam implementasyon)",
+      "Farklı algoritma seçenekleri (Bottom-Left Fill, vb.)",
+      "Parça öncelik seviyeleri",
+      "CNC makine formatı export (G-code)",
+      "3D önizleme",
+      "Parça kütüphanesi",
+      "Şablon kaydetme",
+      "Karşılaştırma modu (farklı algoritmalar)",
+      "Geçmiş optimizasyon kayıtları"
+    ]
+  }
+}
+
