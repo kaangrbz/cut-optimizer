@@ -920,6 +920,33 @@
             }
         }
 
+        // ======================== VERSİYON YÜKLEME ==================================
+
+        /**
+         * CHANGELOG.json'dan en son versiyonu yükler ve gösterir
+         */
+        function loadVersionNumber() {
+            fetch('CHANGELOG.json')
+                .then(response => {
+                    if (!response.ok) throw new Error('CHANGELOG.json bulunamadı');
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.versions && data.versions.length > 0) {
+                        // En son versiyon (ilk eleman)
+                        const latestVersion = data.versions[0].version;
+                        const versionElement = document.getElementById('versionNumber');
+                        if (versionElement) {
+                            versionElement.textContent = `v${latestVersion}`;
+                        }
+                    }
+                })
+                .catch(err => {
+                    console.warn('Versiyon numarası yüklenemedi:', err);
+                    // Hata durumunda varsayılan değer bırak
+                });
+        }
+
         // ======================== SAYFA YÖNETİMİ ==================================
 
         function showPage(pageName) {
@@ -1086,6 +1113,9 @@
 
         // Sayfa yüklendiğinde
         window.onload = function() {
+            // Versiyon numarasını yükle
+            loadVersionNumber();
+            
             // Ana sayfayı göster
             showPage('main');
             

@@ -1,9 +1,22 @@
 {
   "versions": [
     {
+      "version": "0.0.3-beta",
+      "versionName": "Ikonlar ve Browserconfig İyileştirmesi",
+      "date": "2025-12-11",
+      "summary": "İkonlar ve Browserconfig eklendi",
+      "added": [
+        "İkonlar eklendi",
+        "Browserconfig eklendi"
+      ],
+      "changed": [],
+      "fixed": [],
+      "removed": []
+    },
+    {
       "version": "0.0.2-beta",
       "versionName": "Parça Seçim İyileştirmesi",
-      "date": "2024-12-XX",
+      "date": "2025-12-11",
       "summary": "Parça seçim davranışı iyileştirildi. Artık parçalara tıklandığında zoom yapılmıyor, sadece parça seçiliyor.",
       "added": [],
       "changed": [],
@@ -16,7 +29,7 @@
     {
       "version": "0.0.1-beta",
       "versionName": "İlk Sürüm",
-      "date": "2024-12-XX",
+      "date": "2025-12-11",
       "summary": "Cut Optimizer'ın ilk stabil sürümü. MaxRects algoritması ile 2D kesme optimizasyonu, canvas görselleştirme, export/import özellikleri ve gelişmiş kontroller ile başlangıç.",
       "added": [
         "MaxRects heuristik algoritması ile 2D kesme optimizasyonu",
